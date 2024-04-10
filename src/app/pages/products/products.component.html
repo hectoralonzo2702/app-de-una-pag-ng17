@@ -1,0 +1,38 @@
+<!-- Mostrando los productos> -->
+
+<div class="container" >
+    <h1>This is our products</h1>
+
+<table class="table table-dark table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Product</th>
+        <th scope="col">Price</th>
+        <th scope="col">Description</th>
+        <th scope="col">Detail</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <!-- @for -->
+      @for (product of productList; track $index) {
+
+        <tr>
+          <th scope="row">{{product.id}}</th>
+          <td>{{product.title}}</td>
+          <td>{{product.price | currency}}</td>
+          <td>{{product.description}}</td>
+
+          <!-- necesitamos escuchar un click e ir a la opcion escogida cuando se ejecute este metodo que 
+            vive en el controlador de este Comp -->
+          <td><button (click)="navegate(product.id)"
+            type="button" class="btn btn-outline-primary"
+            
+            >Detail </button></td>
+        </tr>
+      }<!-- fin del @for -->
+      
+    </tbody>
+  </table>
+</div>

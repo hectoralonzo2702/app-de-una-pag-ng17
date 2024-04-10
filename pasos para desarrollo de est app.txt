@@ -1,0 +1,99 @@
+🎁👕🎇🎠🎠🎪🎢👕🎁
+
+https://youtube.com/shorts/2JP6uEZ0pwQ?si=ouy3yHtaXUUv6XQ2
+
+
+_______________________________________________________________________________________________________________________________
+
+pasos para app angular 17
+_______________________________________________________________________________________________________________________________
+
+uno:
+
+rutas en fichero: app.routes.ts
+
+...{path: '', component: HomeComponent},
+    {path: 'products', component: ProductsComponent},
+    {path: 'products/:id', component: ProductDetailComponent},
+    {path: 'contact', component: ContactComponent},
+    {path: '**', redirectTo: '', pathMatch: 'full'}...
+
+_______________________________________________________________________________________________________________________________
+dos: 
+
+instalar bootstrap@5.3.3
+
+npm i bootstrap@5.3.3
+
+_______________________________________________________________________________________________________________________________
+tres:
+
+cambios en el angular.json lineas 29 y 32
+
+_______________________________________________________________________________________________________________________________
+cuatro:
+
+_______________________________________________________________________________________________________________________________
+
+.
+.
+.
+_______________________________________________________________________________________________________________________________
+cinco
+
+configuracion del Comp Home:
+		Navbar
+		back del Comp, etc
+
+
+_______________________________________________________________________________________________________________________________
+seis
+
+configuracion del api.service
+los get que retornaran los productos y los productos por id
+
+_______________________________________________________________________________________________________________________________
+siete
+
+importacion del provierHttpClient en fichero app.config.ts
+
+_______________________________________________________________________________________________________________________________
+ocho
+
+Mostrando los productos en la vista del Comp products
+
+		tabla desde bootstrap,etc
+
+_______________________________________________________________________________________________________________________________
+nueve
+
+Consumiendo el backend
+
+		en ts del Comp products nos valemos del api.service para traer los productos de un backend remoto
+
+		hacemos del modelo(interface) que tendran nuestros observables para ello
+				*- creamos carpeta llamada "models" y dentro de ella un ts llamado "product.models.ts"
+
+_______________________________________________________________________________________________________________________________
+diez
+
+mostrando los productos en la vista del Comp products
+
+		con @for.... version nueva del *ngFor...
+
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
